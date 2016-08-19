@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  19 AUG 2016 11:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.28)  19 AUG 2016 21:56
 entering extended mode
 **Z:/personal/cmjia.github.io/CV/cv_4.tex
 (Z:/personal/cmjia.github.io/CV/cv_4.tex
@@ -148,7 +148,7 @@ Overfull \hbox (2.79523pt too wide) in paragraph at lines 118--126
  []
 
 
-Overfull \hbox (53.52374pt too wide) in paragraph at lines 136--143
+Overfull \hbox (56.32205pt too wide) in paragraph at lines 136--143
 [][] 
  []
 
@@ -165,13 +165,13 @@ Here is how much of TeX's memory you used:
  4088 multiletter control sequences out of 15000+200000
  7639 words of font info for 27 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,6n,21p,311b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,21p,316b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (2 pages, 86471 bytes).
+Output written on cv_4.pdf (2 pages, 86492 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
