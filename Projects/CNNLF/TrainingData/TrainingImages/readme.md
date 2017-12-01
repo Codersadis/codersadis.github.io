@@ -12,6 +12,7 @@ Notes: The matlab code for generating training samples will be provided soon.
 - The folder 'TrainingImages' contains the HEVC-compressed (QP=22,27,32,37) images and their corresponding label images (only luma channel is provided).
 - The folder 'TrainingImages\Label' contains uncompressed BSDS500 dataset in .bmp format.
 - The folder 'TrainingImages\qp**' contains HEVC-compressed BSDS500 dataset in .bmp format, where ** denotes the QP value.
+- Download link: https://github.com/Codersadis/codersadis.github.io/tree/master/Projects/CNNLF/TrainingData/TrainingImages
 
 ## Test
 - Platform: MATLAB
