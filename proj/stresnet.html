@@ -62,16 +62,16 @@
                             Abstract
                         </h2>
                         <div class="courses">  
-                            The non-local self-similarity (NSS) has been emerging as one of the most properties of natural image and videos, which depicts the repetitiveness of higher level patterns (e.g., textures and structures) globally positioned in images and videos, and has achieved great success in various image/video restoration applications. Experimental results demonstrate that the proposed NLSF can achieve up to significant coding gain compared with the original HEVC reference encoder implementation in all coding configurations.
+                            In this paper, we propose a spatial-temporal residue network (STResNet) based in-loop filter for HEVC inter coding by utilizing both spatial and temporal information. In contrast with conventional CNN-based filter for video coding, the temporal information is also taken into account for inloop filters to improve the quality of compressed frames. In particular, the residue learning approach is adopted to accelerate the training process in our designed network and boost the coding performance. To investigate the compatibility with the state-of-the-art video compression algorithm, we integrate the proposed STResNet into HM 16.15 as a novel inloop filtering method after sample adaptive offset (SAO). Moreover, the coding tree unit (CTU) level control flags are designed to guarantee the performance of STResNet by rate-distortion optimization. Experimental results indicate that STResNet provides higher visual quality and reduces on average 1.3% bit-rate for HEVC in random access configuration.
                         </div>     
 
                         <h2 class="section_header">
-                            Proposed NLSF Algorithm
+                            Proposed STResNet for Video Coding
                         </h2>
-                        The basic idea of proposed NLSF algorithm is to adaptively sparsify the natural image in the domain of group. After deblocking filter in HEVC, the whole reconstructed image is feeded into the NLSF algorithm by overlapply searching the similar blocks for group sparsity. The singular value decomposition (SVD) is then applied to the generated sparse groups, after which the whole image is averagely recontructed. As such, the block artifact and blurring artifact can be removed by the collaborative filtering process in SVD and better prediction performance can be obtained for subsequent video coding.
+                        The structure of proposed STResNet is shown in Fig. 1. STResNet is a fully convolution network with four layers and also the feature map numbers of each layer are provided in Fig. 1 and listed in Table I. There are two inputs for STResNet. One is the current block and the other is the co-located block of current block in the previous coded frame, which is obtained from the closest reference frame of the current one.
                         <div class="courses"> 
                             <figure>
-                                <img width="750" height="400"  src="../img/proj/nlsf/nlsf-framework.jpg" align="middle" > 
+                                <img width="400" height="350"  src="../img/stresnet.png" align="middle" > 
                                 <figcaption>
                                     Fig. 1 Diagram of the proposed NLSF algorithm in HEVC.
                                 </figcaption>
@@ -82,11 +82,11 @@
                             Performance
                         </h2>
                         <div class="courses"> 
-                        Fig 2. provides the coding performance by sequence-by-sequence. It is clear that SANF performs well on all test sequences under all configuration. Table 3 shows us the performance of our proposed SANF under all intra, low delay B and random access configurations when ALF turns off. Obviously, SANF could buy us giant coding gain in all circumstances.
+                        Fig 2. provides the coding performance by sequence-by-sequence.  In the proposed STResNet, only the luminance is processed using the trained model. Moreover, CTU level control flags are used to maximize of performance of STResNet based on rate-distortion optimization. In the RDO process, we only consider the distortion of luma channel. Four typical quantization parameters are tested: 22, 27, 32, 37, and for each QP the corresponding network is used. All experiments are conducted under random access (RA) configuration with zero QP offset for all B frames.
                         <figure>
-                            <img width="750" height="800"  src="../img/proj/nlsf/performance.png" align="middle" >                              
+                            <img width="300" height="450"  src="../img/proj/stresnet/performance.png" align="middle" >                              
                             <figcaption>
-                                Fig. 2 Left: Performance of proposed framework under bit-rate reduction (BDBR) metric, anchor: HM-12.0.
+                                Fig. 2 Left: Performance of proposed STResNet under bit-rate reduction (BDBR) metric, anchor: HM-16.15 with zero QP offset.
                             </figcaption>
                         </figure>
                         </div> 
@@ -95,9 +95,7 @@
                             Publication
                         </h2>
                         <div class="courses"> 
-                            <li><font size="2" >S. Ma, X. Zhang, J. Zhang, <strong>C.Jia</strong>, S. Wang and W. Gao. Nonlocal In-Loop Filter: The Way Toward Next-Generation Video Coding?<i> IEEE MultiMedia 23 (2), 16-26. </i> 
-                            <li>J. Zhang, <strong>C. Jia</strong>, N. Zhang, S. Ma and W. Gao. Structure-driven Adaptive Non-local Filter for HEVC. <i>IEEE DCC 2016. </i> 
-                            <li>J. Zhang, <strong>C. Jia</strong>, S. Ma and W. Gao. Non-Local Structure-Based Filter for Video Coding. <i>IEEE ISM 2015. </i> 
+                            <li><strong>C. Jia</strong>, S. Wang, X. Zhang, S. Wang & S. Ma. Spatial-Temporal Residue Network Based In-Loop Filter for Video Coding. <i>IEEE VCIP, 2017. 
                         </div>                                                 
                         
 
@@ -143,7 +141,7 @@
     <script src = "../lib/jquery-1.12.3.min.js"></script>
     <script src = "../lib/bootstrap/js/bootstrap.min.js"></script>
     <script src = "../js/theme.js"></script>
-	</p>
-	</p>      
+    </p>
+    </p>      
 </body>
 </html>
