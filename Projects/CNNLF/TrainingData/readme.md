@@ -20,7 +20,7 @@ Notes: The matlab code for generating training samples will be provided soon.
 - Modify the parameters to adapt your tasks when generating data.
 
 ### Reference
-- C. Jia, S. Wang, X. Zhang, S. Wang, J. Liu, S. Pu and S. Ma, “Content-Aware Convolutional Neural Network for In-loop Filtering in High Efficiency Video Coding,” accepted by IEEE Trans. on Image Processing, 2019.
+- C. Jia, S. Wang, X. Zhang, S. Wang, J. Liu, S. Pu and S. Ma, “Content-Aware Convolutional Neural Network for In-loop Filtering in High Efficiency Video Coding,” IEEE Trans. on Image Processing, 2019.
 
 ### Author
 - cmjia@pku.edu.cn
