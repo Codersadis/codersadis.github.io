@@ -3,8 +3,7 @@
 
 ### Brief Intro
 This folder contains the materials for single CNN model training data generation in our paper.
-As mentioned in our paper, we use BSDS-500 dataset for illustration.
-Notes: The matlab code for generating training samples will be provided soon. 
+As mentioned in our paper, we use BSDS-500 dataset for illustration. 
 
 ### Detail
 - generate_single_train.m: 80% of the dataset are used for training data generation. 
@@ -28,6 +27,4 @@ Notes: The matlab code for generating training samples will be provided soon.
 
 ### Author
 - cmjia@pku.edu.cn
-
-### License
-- GPL v3  
+ 
