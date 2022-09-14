@@ -1,6 +1,0 @@
-@article{jia2019content,
-title={Content-Aware Convolutional Neural Network for In-loop Filtering in High Efficiency Video Coding},
-author={Chuanmin Jia and Shiqi Wang and Xinfeng Zhang and Shanshe Wang and Jiaying Liu and Shiliang Pu and Siwei Ma}, 
-journal={IEEE Transactions on Image Processing}, 
-year={2019} 
-}
